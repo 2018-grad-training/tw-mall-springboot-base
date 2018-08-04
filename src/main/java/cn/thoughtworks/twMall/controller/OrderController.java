@@ -16,7 +16,7 @@ public class OrderController {
     private OrderService orderService;
 
     @GetMapping("/{orderId}")
-    public ResponseEntity<Order> get(@PathVariable Long orderId) throws OrderNotFoundException {
+    public ResponseEntity<Order> get(@PathVariable Long orderId) {
         Order order = orderService.get(orderId);
         return ResponseEntity.ok(order);
     }

@@ -16,7 +16,7 @@ public class OrderService {
         this.orderRepository = orderRepository;
     }
 
-    public Order get(Long id) throws OrderNotFoundException {
+    public Order get(Long id) {
         return orderRepository.findById(id)
                 .orElseThrow(OrderNotFoundException::new);
     }
