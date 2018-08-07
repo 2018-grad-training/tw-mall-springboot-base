@@ -1,7 +1,14 @@
 order:
-  - user_id: 1
+  - id: 1
+    user_id: 1
     create_time: "[DAY,NOW]"
-  - user_id: 3
+  - id: 2
+    user_id: 3
     create_time: "[DAY,NOW]"
-  - user_id: 3
+  - id: 3
+    user_id: 3
     create_time: "[DAY,NOW]"
+order_item:
+  - order_id: 1
+    product_id: 5
+    count: 100
